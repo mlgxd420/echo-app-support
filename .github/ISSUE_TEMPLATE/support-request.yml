@@ -1,0 +1,35 @@
+name: Echo support request
+description: Ask for help with the Echo iOS app without sharing private reflection content.
+title: "Support: "
+labels: [support]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not include reflection text, contact details, account tokens, or other sensitive personal information."
+  - type: input
+    id: app-version
+    attributes:
+      label: Echo version
+      placeholder: "For example, 1.0 (1)"
+    validations:
+      required: true
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOS version and device
+      placeholder: "For example, iOS 26.1 on iPhone 17"
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What happened?
+      description: Explain the behavior without including private content.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+    validations:
+      required: true
